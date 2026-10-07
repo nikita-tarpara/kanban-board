@@ -1,0 +1,169 @@
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.toolbox-cont { 
+    height: 5rem; 
+    background-color: #4b4b4b; 
+    display: flex; 
+    align-items: center; 
+} 
+
+.toolbox-cont > * { 
+    margin-left: 4rem; 
+} 
+
+.toolbox-priority-cont { 
+    height: 3.5rem; 
+    width: 18rem; 
+    background-color: #3d3d3d; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-evenly; 
+} 
+
+.toolbox-priority-cont > *:hover { 
+    background-color: #485460; 
+}
+
+.color { 
+    height: 1.5rem; 
+    width: 3rem; 
+    cursor: pointer;
+} 
+
+.lightpink { 
+    background-color: #ef7386; 
+} 
+
+.lightgreen { 
+    background-color: #1fc2a5; 
+} 
+
+.lightblue { 
+    background-color: #6ba8e4; 
+} 
+
+.black { 
+    background-color: #879596; 
+} 
+
+.action-btn-cont { 
+    height: 3.5rem; 
+    width: 8rem; 
+    background-color: #3d3d3d; 
+    display: flex; 
+} 
+
+.action-btn-cont > * { 
+    display: flex; 
+    width: 50%; 
+    font-size: 2rem; 
+    color: white; 
+    justify-content: center; 
+    align-items: center; 
+} 
+
+.add-btn:hover, .remove-btn:hover { 
+    background-color: #4bb543; 
+} 
+
+.main-cont { 
+    display: flex; 
+    gap: 2rem; 
+    justify-content: center; 
+    padding: 2rem; 
+    flex-wrap: wrap; 
+/* As many tickets can be added here so this will make sure that the design is 
+neat to accomodate multiple tickets */ 
+} 
+
+.ticket-cont { 
+    height: 15rem; 
+    width: 15rem; 
+    border-radius: 10px;
+    padding: 10px;
+} 
+
+.ticket-color { 
+    height: 1rem; 
+    cursor: pointer;
+} 
+
+.ticket-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ticket-id { 
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    height: 2rem; 
+} 
+
+.task-area {
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 5px;
+    color: black;
+    margin-top: 5px;
+    height: 10rem;
+}
+
+.ticket-lock { 
+    cursor: pointer;
+} 
+
+.fa-lock, .fa-unlock {
+    padding: 8px;
+}
+
+.modal-cont { 
+    height: 50vh; 
+    width: 45vw; 
+    display: none; 
+    background-color: lightsalmon; 
+    position: absolute; 
+    top: 30%; 
+    left: 27%; 
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.textArea-cont { 
+    height: 100%; 
+    width: 75%; 
+    resize: none; 
+    outline: none; 
+    border: none; 
+    background-color: #f0eeee;
+    font-size: 2rem; 
+    color: black; 
+    padding: 2rem; 
+    border-right: 1px solid lightgray;
+}
+
+.priority-colors-container { 
+    height: 100%; 
+    width: 25%; 
+    display: flex; 
+    flex-direction: column; 
+    background-color: #ffffff; 
+    align-items: center; 
+    justify-content: space-around; 
+} 
+
+.priority-color { 
+    height: 3rem; 
+    width: 5rem; 
+    cursor: pointer;
+} 
+
+.active { 
+    border: 5px solid lightsalmon; 
+} 
